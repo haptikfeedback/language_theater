@@ -1,5 +1,6 @@
-cd easyrtc/server_example && npm start &
-python language_theater/manage.py runserver &
+#!/bin/bash
+cd ./easyrtc/server_example && npm start &
+python language_theater/manage.py runserver 8000 &
 
 exit_script() {
     echo "Exiting..."
@@ -8,4 +9,4 @@ exit_script() {
 }
 
 trap exit_script SIGINT SIGTERM
-sleep infinity
+wait

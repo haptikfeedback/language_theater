@@ -16,8 +16,8 @@ app.use(serveStatic('static', {'index': ['index.html']}));
 // Start Express https server on port 8080
 var webServer = https.createServer(
     {
-        key:    fs.readFileSync("/home/iamfdev/Downloads/77502763_webrtc.key"),
-        cert:   fs.readFileSync("/home/iamfdev/Downloads/77502763_webrtc.cert"),
+        key:    fs.readFileSync("/Users/iamfdev/git/django/language_theater/98516305_webrtc.key"),
+        cert:   fs.readFileSync("/Users/iamfdev/git/django/language_theater/98516305_webrtc.cert"),
     },
     app);
 

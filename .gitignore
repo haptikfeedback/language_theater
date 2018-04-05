@@ -189,3 +189,6 @@ bower_components/
 __pycache__
 env
 *.sqlite3
+*.cert
+*.key
+
